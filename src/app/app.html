@@ -1,13 +1,20 @@
-                  <h1>{{ titol() }}</h1>
+<div class="app-container">
+  <header>
+    <h1>{{ titol() }}</h1>
+    <p class="subtitle">Climate Tipping Points Explorer</p>
+  </header>
 
-                  <nav>
-                        <a routerLink="/alumnes">Alumnes</a> | 
-                        <a routerLink="/salutacio">Salutació</a> | 
-                        <a routerLink="/suma">Suma</a> | 
-                        <a routerLink="/pomodoro">Pomodoro</a> | 
-                        <a routerLink="/pipes">Pipes</a>
-                  </nav>
+  <nav>
+   <!--  <a routerLink="/tipping-points" routerLinkActive="active">Tipping Points</a> Per introduir algun enllaç -->
+  </nav>
 
-                  <hr />
+  <hr />
 
-                  <router-outlet></router-outlet>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <p>Group 1 - Jesuïtes El Clot</p>
+  </footer>
+</div>

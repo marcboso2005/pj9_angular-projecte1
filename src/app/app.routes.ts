@@ -1,6 +1,11 @@
 import { Routes } from '@angular/router';
+import { TippingPointsComponent } from './tipping-points.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', redirectTo: 'tipping-points', pathMatch: 'full' },
+  { path: 'tipping-points', component: TippingPointsComponent },
+  { path: '**', redirectTo: 'tipping-points' }
+];
 
 /*
 import { Routes } from '@angular/router';
